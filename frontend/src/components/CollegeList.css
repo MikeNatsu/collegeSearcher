@@ -1,0 +1,20 @@
+
+
+.collegeItem{
+   
+    color:black;
+    background-color: aliceblue;
+    margin: 5px;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 15%;
+    height: auto;
+    padding: 20px 120px 250px 120px;
+    flex-basis: 160px;
+}
+
+.listBox{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto 10%;
+}
