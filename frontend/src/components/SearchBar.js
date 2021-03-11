@@ -9,7 +9,7 @@ const SearchBar = ({input, onChange}) => {
     };
     
     return (
-        <input style={BarStyling} value={input}  placeholder={"Search college"} onChange={(e) => onChange(e.target.value)}/>
+        <input className="container" style={BarStyling} value={input}  placeholder={"Search college"} onChange={(e) => onChange(e.target.value)}/>
     )
 }
 export default SearchBar;
