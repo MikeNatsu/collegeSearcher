@@ -18,7 +18,8 @@ const CollegeList = ({collegeList=[]}) => {
                         <h2>Domains</h2>
                         <li>
                         {data.domains.map((dom, index) =>{
-                            return <lu>{dom}</lu>
+                            
+                            return <lu><a href={`https://${dom}`} >{dom}</a></lu>
                         })}
                         </li>
                     </div>
