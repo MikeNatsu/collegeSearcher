@@ -9,7 +9,6 @@ const SearchPage = (props) => {
     const [input, setInput] = useState('');
     const [collegeListDefault, setCollegeListDefault] = useState();
     const [collegeList, setCollegeList] = useState();
-    //const [collegeUSData, setCollegeUSData] = useState(); 
 
     //alternative to componentDidMount() ---> useEffect()
     //fetching WU.json from router (express);
@@ -19,24 +18,10 @@ const SearchPage = (props) => {
           .then(data => {
              setCollegeList(data) 
              setCollegeListDefault(data)
-           
-            
         });
         
     }
 
-    // //fetching College API 
-    // const fetchCollegeUS = async () => {
-    //     return await fetch("https://api.collegeai.com/v1/api/autocomplete/colleges?api_key=MY_API_KEY&query=MIT")
-    //       .then(r => r.json())
-    //       .then(response => {
-    //         setCollegeUSData(response);
-    //         console.log(collegeUSData);
-    //       console.log(response)
-    //     });
-
-    // }
-    
       const updateInput = async (input) => {
        
          const filtered = collegeListDefault.filter(college => {

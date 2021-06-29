@@ -5,7 +5,7 @@ const cors = require('cors');
 
 const app = express();
 
-const port = 5000; 
+const port = 5000;  
 
 //read WU file and attach it to /api route
 let rawdata = fs.readFileSync(path.resolve(__dirname, 'WU.json'));
